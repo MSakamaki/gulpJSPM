@@ -1,7 +1,7 @@
 System.config({
   "paths": {
     "*": "*.js",
-    "gulpjspm/*": "lib/*.js"
+    "gulpjspm/*": "app/*.js"
   }
 });
 
