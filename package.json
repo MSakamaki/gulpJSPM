@@ -4,5 +4,8 @@
     "directories": {
       "baseURL": "client"
     }
+  },
+  "dependencies": {
+    "express": "^4.11.2"
   }
 }
