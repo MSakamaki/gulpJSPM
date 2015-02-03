@@ -7,5 +7,10 @@
   },
   "dependencies": {
     "express": "^4.11.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.0.0-rc4",
+    "gulp": "^3.8.10",
+    "gulp-load-plugins": "^0.8.0"
   }
 }
