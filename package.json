@@ -3,6 +3,10 @@
     "name": "gulpjspm",
     "directories": {
       "baseURL": "client"
+    },
+    "dependencies": {
+      "express": "^4.11.2",
+      "jquery": "^2.1.3"
     }
   },
   "dependencies": {
