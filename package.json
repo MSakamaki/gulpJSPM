@@ -1,0 +1,8 @@
+{
+  "jspm": {
+    "name": "gulpjspm",
+    "directories": {
+      "baseURL": "client"
+    }
+  }
+}
