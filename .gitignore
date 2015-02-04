@@ -1,2 +1,3 @@
 /client/jspm_packages
 /node_modules
+.DS_Store

@@ -6,6 +6,7 @@ var browserSync = require('browser-sync');
 gulp.task('browser-sync', function() {
   browserSync.init([
     './client/app/**/*.js',
+    './client/app/**/*.css',
     './client/**/*.html'
   ],
   {
