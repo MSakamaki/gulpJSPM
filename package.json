@@ -18,6 +18,7 @@
     "gulp": "^3.8.10",
     "gulp-express": "^0.1.7",
     "gulp-load-plugins": "^0.8.0",
+    "gulp-protractor": "0.0.12",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.7",
     "karma-firefox-launcher": "^0.1.4",
@@ -27,6 +28,7 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-sinon-chai": "^0.3.0",
     "mocha": "^2.1.0",
+    "protractor": "^1.6.1",
     "require-dir": "^0.1.0"
   }
 }
