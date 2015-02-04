@@ -52,6 +52,7 @@ jspm install
  + [React Webapp Starter kit](https://github.com/kriasoft/react-starter-kit)
  + [react-jspm](https://github.com/tinkertrain/jspm-react)
  + [JSファイル以外のimport](https://github.com/systemjs/systemjs)
+ + [coverage](https://github.com/Workiva/karma-jspm/issues/22)
 
 ```sh
 # nodeのes6対応調べるコマンド

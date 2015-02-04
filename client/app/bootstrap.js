@@ -1,8 +1,9 @@
-import 'app/bootstrap.css!';
+import './bootstrap.css!';
 
 import $          from 'jquery';
-import imgEs6     from 'images/es6.png!image';
-import imgFavicon from 'favicon.ico!image';
+// TODO:モジュール管理を外部に・・・
+import imgEs6     from '../images/es6.png!image';
+import imgFavicon from '../favicon.ico!image';
 
 export function bootstrap() {
   // bootstrap code here

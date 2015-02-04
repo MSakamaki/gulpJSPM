@@ -13,22 +13,25 @@ module.exports = function(config) {
     frameworks: ['jspm','mocha','sinon-chai'],
 
 
-    // list of files / patterns to load in the browser
+    // //list of files / patterns to load in the browser
     // files: [
     //   'client/**/*.js'
     // ],
 
     jspm: {
+      //useBundles: true,
+      config: "./client/config.js",
+      packages: "./client/jspm_packages/",
       loadFiles: [
           './client/app/**/*.spec.js'
         ],
       serveFiles: [
-          './client/jspm_packages/**/*.js',
-          './client/app/**/!(*spec|*mock).js'
+          './client/app/**/!(*spec|*mock).js',
+          './client/**/*.png',
+          './client/**/*.ico',
+          './client/**/*.css',
         ]
     },
-
-//Users/msakamaki/project/FrontDevelopment/gulpJspm/
 
     // list of files to exclude
     exclude: [
@@ -44,8 +47,8 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['mocha','progress'],
-
+    //reporters: ['mocha','progress'],
+    reporters: ['progress'],
 
     // web server port
     port: 9876,
@@ -61,13 +64,13 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
 
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     //'Firefox', 'Chrome', 'PhantomJS'
-    browsers: ['PhantomJS'],
+    browsers: ['Firefox'],
 
 
     // Continuous Integration mode

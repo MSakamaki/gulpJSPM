@@ -1,12 +1,14 @@
 'use strict';
 
-describe('bootstrap.js test', function () {
+import {bootstrap} from './bootstrap'
 
-  it('test one...', function () {
-     expect(1).to.be.ok;
+describe('bootstrap.js test', () => {
+
+  it('test one...', () => {
+    expect(1).to.be.ok;
   });
 
-  it('test tow...', function () {
-     expect(1).to.be.ok;
+  it('test tow...', () => {
+    expect(bootstrap).to.be.ok;
   });
 });
