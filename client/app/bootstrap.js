@@ -1,4 +1,5 @@
 import $ from 'jquery';
+System.import('app/bootstrap.css!')
 
 export function bootstrap() {
   // bootstrap code here
