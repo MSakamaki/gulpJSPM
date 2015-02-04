@@ -1,16 +1,9 @@
 jspmプロジェクト雛形
 ----
 
-フレームワーク非依存のプロジェクト雛形
-
-## 参考資料
-
- + [jspm公式ページ](http://jspm.io/)
- + [React Webapp Starter kit](https://github.com/kriasoft/react-starter-kit)
- + [react-jspm](https://github.com/tinkertrain/jspm-react)
+JSフレームワーク非依存のプロジェクトテンプレート
 
 ### Get Started
-
 
 ```sh
 
@@ -51,3 +44,34 @@ jspm install
 
  + [ ] altJS対応
  + [ ] cssプリプロセッサ系(sass/less)
+
+
+## 参考資料
+
+ + [jspm公式ページ](http://jspm.io/)
+ + [React Webapp Starter kit](https://github.com/kriasoft/react-starter-kit)
+ + [react-jspm](https://github.com/tinkertrain/jspm-react)
+
+
+```sh
+# nodeのes6対応調べるコマンド
+nodebrew exec v0.11.14 node --v8-options | grep harmony
+  --harmony_typeof (enable harmony semantics for typeof)
+  --harmony_scoping (enable harmony block scoping)
+  --harmony_modules (enable harmony modules (implies block scoping))
+  --harmony_symbols (enable harmony symbols (a.k.a. private names))
+  --harmony_proxies (enable harmony proxies)
+  --harmony_collections (enable harmony collections (sets, maps))
+  --harmony_generators (enable harmony generators)
+  --harmony_iteration (enable harmony iteration (for-of))
+  --harmony_numeric_literals (enable harmony numeric literals (0o77, 0b11))
+  --harmony_strings (enable harmony string)
+  --harmony_arrays (enable harmony arrays)
+  --harmony_maths (enable harmony math functions)
+  --harmony_promises ((dummy flag, has no effect))
+  --harmony (enable all harmony features (except typeof))
+
+
+#ES6ベースのnode v.0.11.*を使う場合(例：nodebrewを使用する場合)
+nodebrew exec v0.11.14 node --harmony node_modules/.bin/gulp
+```
