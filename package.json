@@ -6,7 +6,6 @@
     },
     "dependencies": {
       "css": "^0.1.0",
-      "express": "^4.11.2",
       "image": "^0.1.0",
       "jquery": "^2.1.3"
     }
