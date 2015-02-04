@@ -3,20 +3,31 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 
-gulp.task('browser-sync', function() {
-  browserSync.init([
+var defaultSyncFile = [
     './client/app/**/*.js',
     './client/app/**/*.css',
     './client/**/*.html'
-  ],
-  {
-    notify: true,
-    server: {
-      baseDir: ['./client']
-    },
-    port: 9000,
-    // firefox, google chrome, 
-    browser: ['google chrome'],
-    tunnel: true
-  });
+  ];
+var defaultSyncOption = {
+      notify: true,
+      server: {
+        baseDir: ['./client']
+      },
+      port: 9000,
+      // firefox, google chrome, 
+      browser: ['google chrome'],
+      tunnel: true
+    };
+
+gulp.task('browser-sync', function() {
+  browserSync.init(defaultSyncFile,defaultSyncOption);
+});
+
+gulp.task('browser-sync:test', function() {
+  defaultSyncOption.open=false;
+  browserSync.init(defaultSyncFile,defaultSyncOption);
+});
+
+gulp.task('browser-sync:exit', function() {
+  browserSync.exit();
 });

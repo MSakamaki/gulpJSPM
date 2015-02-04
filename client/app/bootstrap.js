@@ -8,13 +8,15 @@ import imgFavicon from '../favicon.ico!image';
 export function bootstrap() {
   // bootstrap code here
   $('#app').append('<button id="addbtn">Get Server Meesage</button>');
-  $('#app').append('<ul id="lists" class="messagelist"><li>hoge</li></ul>')
+  $('#app').append('<ul id="lists"><li>hoge</li></ul>')
   $('#addbtn').click(()=>{
     $.ajax({
         url : "http://localhost:3000/api/test",
         dataType : 'json',
         success : (data) => {
           $('#lists').append($('<li>')
+            .addClass('messagelist')
+            .addClass('js-message')
             .append($(imgFavicon).clone())
             .append(data.message));
         }, error :(err) => {
