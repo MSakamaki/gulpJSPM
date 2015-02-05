@@ -10,6 +10,9 @@ JSフレームワーク非依存のプロジェクトテンプレート
 # jspmをグローバルインストール
 npm install -g jspm
 
+git clone https://github.com/MSakamaki/gulpJSPM
+cd gulpJSPM
+
 npm install
 jspm install
 
@@ -22,8 +25,8 @@ jspm install
     + [x] `serve` : サーバ起動
     + [x] `default` : `gulp serve`のalias
  + **TEST**
-    + [x] `gulp test` : karmaの実行
-    + [ ] `test:e2e` : End to End Test
+    + [x] `test` : karmaの実行
+    + [x] `test:e2e` : End to End Test(option `gulp test --case=e2e`)
     + [ ] `test:accept` : 受け入れ(シナリオ)テスト
  + **REPORT**
     + [ ] `report:make` : レポート生成

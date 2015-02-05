@@ -24,8 +24,13 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('browser-sync:test', function() {
-  defaultSyncOption.open=false;
-  browserSync.init(defaultSyncFile,defaultSyncOption);
+  browserSync.init(defaultSyncFile,{
+      notify: false,
+      server: {
+        baseDir: ['./client']
+      },
+      port: 9000,
+    });
 });
 
 gulp.task('browser-sync:exit', function() {
