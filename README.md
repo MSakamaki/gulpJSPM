@@ -52,6 +52,7 @@ jspm install
 ## 参考資料
 
  + [jspm公式ページ](http://jspm.io/)
+ + [BrowserSync](http://www.browsersync.io/)
  + [React Webapp Starter kit](https://github.com/kriasoft/react-starter-kit)
  + [react-jspm](https://github.com/tinkertrain/jspm-react)
  + [JSファイル以外のimport](https://github.com/systemjs/systemjs)
