@@ -39,7 +39,8 @@ jspm dl-loader --traceur
     + [x] `serve` : サーバ起動
     + [x] `default` : `gulp serve`のalias
  + **TEST**
-    + [x] `test` : karmaの実行
+    + [x] `test` : 全テストの実行
+    + [x] `test:unit` : karmaの実行
     + [x] `test:e2e` : End to End Test(option `gulp test --case=e2e`)
     + [ ] `test:accept` : 受け入れ(シナリオ)テスト
     + [ ] `test:api` : apiに対するテスト
