@@ -26,6 +26,7 @@ gulp.task('browser-sync', function() {
 gulp.task('browser-sync:test', function() {
   browserSync.init(defaultSyncFile,{
       notify: false,
+      open: false,
       server: {
         baseDir: ['./client']
       },

@@ -2,7 +2,7 @@ System.config({
   "paths": {
     "*": "*.js",
     "gulpjspm/*": "lib/*.js",
-    "github:*": "https://github.jspm.io/*.js"
+    "github:*": "jspm_packages/github/*.js"
   }
 });
 

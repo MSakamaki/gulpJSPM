@@ -21,16 +21,20 @@ module.exports = function(config) {
     jspm: {
       //useBundles: true,
       config: "./client/config.js",
+      packages: "./client/jspm_packages/",
       loadFiles: [
           './client/app/**/*.spec.js'
         ],
       serveFiles: [
           './client/app/**/!(*spec|*mock).js',
-          './client/jspm_packages/**/*.js',
           './client/**/*.png',
           './client/**/*.ico',
           './client/**/*.css',
         ]
+    },
+
+    proxies: {
+      '/base/jspm_packages/': '/base/client/jspm_packages/',
     },
 
     // list of files to exclude
@@ -64,7 +68,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // start these browsers

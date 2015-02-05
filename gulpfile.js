@@ -20,7 +20,7 @@ gulp.task('test', function(done) {
     gulp.run('test:e2e',done);
   }else if(argv.case === 'unit'){
     gulp.run('test:unit',done);
-  }else {
+  }else{
     gulp.run('test:unit',done);
     gulp.run('test:e2e',done);
   }
