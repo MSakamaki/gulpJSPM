@@ -28,6 +28,7 @@ jspm install
     + [x] `test` : karmaの実行
     + [x] `test:e2e` : End to End Test(option `gulp test --case=e2e`)
     + [ ] `test:accept` : 受け入れ(シナリオ)テスト
+    + [ ] `test:api` : apiに対するテスト
  + **REPORT**
     + [ ] `report:make` : レポート生成
     + [ ] `report:view` : レポートを見る
