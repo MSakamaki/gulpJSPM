@@ -56,6 +56,7 @@ jspm install
  + [react-jspm](https://github.com/tinkertrain/jspm-react)
  + [JSファイル以外のimport](https://github.com/systemjs/systemjs)
  + [coverage](https://github.com/Workiva/karma-jspm/issues/22)
+ + [Aurelia Skeleton](https://github.com/aurelia/skeleton-navigation)
 
 ```sh
 # nodeのes6対応調べるコマンド
