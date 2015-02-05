@@ -21,12 +21,12 @@ module.exports = function(config) {
     jspm: {
       //useBundles: true,
       config: "./client/config.js",
-      packages: "./client/jspm_packages/",
       loadFiles: [
           './client/app/**/*.spec.js'
         ],
       serveFiles: [
           './client/app/**/!(*spec|*mock).js',
+          './client/jspm_packages/**/*.js',
           './client/**/*.png',
           './client/**/*.ico',
           './client/**/*.css',

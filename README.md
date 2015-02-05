@@ -18,6 +18,15 @@ jspm install
 
 ```
 
+### es6 compiler use 6to5
+
+ + `client/config.js`
+
+```sh
+jspm dl-loader --6to5
+# or
+jspm dl-loader --traceur
+```
 
 ### gulp tasks
 

@@ -16,7 +16,7 @@ var defaultSyncOption = {
       port: 9000,
       // firefox, google chrome, 
       browser: ['google chrome'],
-      tunnel: true
+      tunnel: false
     };
 
 gulp.task('browser-sync', function() {
