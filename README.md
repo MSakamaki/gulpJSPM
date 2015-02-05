@@ -18,9 +18,7 @@ jspm install
 
 ```
 
-### es6 compiler use 6to5
-
- + `client/config.js`
+### es6 compiler use switching
 
 ```sh
 jspm dl-loader --6to5
