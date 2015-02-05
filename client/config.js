@@ -3,7 +3,8 @@ System.config({
     "*": "*.js",
     "gulpjspm/*": "lib/*.js",
     "github:*": "https://github.jspm.io/*.js"
-  }
+  },
+  "transpiler": "6to5"
 });
 
 System.config({
