@@ -1,34 +1,34 @@
-describe('protractor sample',() => {
+describe('protractor sample',()=> {
 
-  it('reading.fxos homepage', function() {
+  it('reading.fxos homepage', ()=> {
     browser.get('http://reading.fxos.org');
     var fxos = element(by.id('fxos-'));
     expect(fxos.getText()).toEqual('FxOS コードリーディングとは？');
   });
 
-  it('button check', function() {
+  it('button check', ()=> {
     browser.get('http://localhost:9000/');
     var addBtnEl = element(by.id('addbtn'));
-    browser.wait(function(){
+    browser.wait(()=>{
       return addBtnEl.isPresent();
-    }, 10000, 'about add cart').then(function(){
+    }, 10000, 'about add cart').then(()=>{
       expect(addBtnEl.getText()).toEqual('Get Server Meesage');
     });
   });
 
-  it('button click', function() {
+  it('button click', ()=> {
     browser.get('http://localhost:9000/');
     var addBtnEl = element(by.id('addbtn'));
     var serverMsg = element(by.css('.js-message'));
-    browser.wait(function(){
+    browser.wait(()=>{
       return addBtnEl.isPresent();
-    }, 10000, 'about add cart').then(function(){
+    }, 10000, 'about add cart').then(()=>{
       return addBtnEl.click();
-    }).then(function(){
-      return browser.wait(function(){
+    }).then(()=>{
+      return browser.wait(()=>{
         return serverMsg.isPresent();
       }, 10000, 'no search message');
-    }).then(function(){
+    }).then(()=>{
       expect(serverMsg.getText()).toEqual('hello express server');
     });
   });

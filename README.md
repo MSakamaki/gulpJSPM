@@ -25,7 +25,7 @@ jspm install
 
 ```
 
-### es6 compiler use switching
+### es6 transpiler use switching
 
 ```sh
 jspm dl-loader --6to5
@@ -75,6 +75,11 @@ jspm dl-loader --traceur
  + [JSファイル以外のimport](https://github.com/systemjs/systemjs)
  + [coverage](https://github.com/Workiva/karma-jspm/issues/22)
  + [Aurelia Skeleton](https://github.com/aurelia/skeleton-navigation)
+ + gulp
+   + [Gulp Delete files and folders](https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md)
+ + ES6
+   + [6to5 Features](https://6to5.org/docs/learn-es6/)
+   + [traceur Features](https://github.com/google/traceur-compiler/wiki/LanguageFeatures)
 
 ```sh
 # nodeのes6対応調べるコマンド

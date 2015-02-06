@@ -10,8 +10,8 @@ module.exports = {
   },
   test:{
     e2e:{
-      tmp: '',
-      src: './.tmp/e2e'
+      tmp: './.tmp/e2e',
+      src: './e2e/**/*.js'
     }
   }
 };
