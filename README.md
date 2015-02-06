@@ -86,6 +86,9 @@ jspm dl-loader --traceur
    + [SublimeText ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax)
    + [6to5 Features](https://6to5.org/docs/learn-es6/)
    + [traceur Features](https://github.com/google/traceur-compiler/wiki/LanguageFeatures)
+ + firefox os
+   + [node firefox os](http://nicola.github.io/node-fxos/)
+   + [node firefox client](https://github.com/harthur/firefox-client)
 
 ```sh
 # nodeのes6対応調べるコマンド

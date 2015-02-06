@@ -43,7 +43,7 @@ export default class Bootstrap {
   start(buttonName, messageAnotate, defaultMessage){
     // bootstrap code here
     $('#app').append(`<button id="addbtn">${buttonName}</button>`);
-    $('#app').append(`<ul id="lists"><li>${defaultMessage}</li></ul>`)
+    $('#app').append(`<ul id="lists"><li>${defaultMessage}</li></ul>`);
     $('#addbtn').click(()=>{
       $.ajax({
           url : "http://localhost:3000/api/test",

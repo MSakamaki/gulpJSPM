@@ -1,6 +1,7 @@
+/* jshint -W097 */
 'use strict';
 
-import Bootstrap from './bootstrap'
+import Bootstrap from './bootstrap';
 
 describe('bootstrap.js test', () => {
 

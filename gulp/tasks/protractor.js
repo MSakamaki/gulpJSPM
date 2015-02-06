@@ -9,6 +9,7 @@ gulp.task('webdriver_update', webdriver_update);
 gulp.task('webdriver_standalone', webdriver_standalone);
 
 gulp.task('test:e2e', [
+  'lint',
   'webdriver_update',
   'browser-sync:test',
   'express',

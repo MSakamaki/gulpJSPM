@@ -8,6 +8,14 @@ module.exports = {
   System: {
     transpiler: System.transpiler
   },
+  fxos:{
+    tmp: './.tmp/fxos',
+    zip: './.tmp/fxos/app.zip'
+  },
+  app:{
+    src: 'client/**/*',
+    js : './client/app/**/*!(spec).js'
+  },
   test:{
     e2e:{
       tmp: './.tmp/e2e',

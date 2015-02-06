@@ -43,7 +43,7 @@ gulp.task('browser-sync:doc', function() {
       },
       port: 9002,
     });
-  gulp.watch(config.test.app.src, ['doc:gen']);
+  gulp.watch(config.app.js, ['doc:gen']);
 });
 
 

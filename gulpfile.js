@@ -2,12 +2,26 @@
 
 var gulp = require('gulp');
 var argv = require("yargs").argv;
+var jshint = require('gulp-jshint');
 
 require('gulp-load-plugins')();
 require('require-dir')('./gulp');
 require('require-dir')('./gulp/tasks');
+require('require-dir')('./gulp/tasks/fxos');
 
 // DEVELOPMENT TASKS
+//========= init task ==========g
+
+gulp.task('lint', function() {
+  return gulp.src([
+    'client/app/**/*.js',
+    'e2e/**/*.js'
+    ])
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
+
 //================================================
 var gulp = require('gulp');
 var karma = require('karma').server;

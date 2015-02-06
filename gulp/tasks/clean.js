@@ -13,3 +13,9 @@ gulp.task('clean:doc', function (cb) {
     config.test.doc.src
   ], cb);
 });
+
+gulp.task('clean:fxos', function (cb) {
+  del([
+    config.fxos.tmp
+  ], cb);
+});
