@@ -41,7 +41,7 @@ jspm dl-loader --traceur
  + **TEST**
     + [x] `test` : 全テストの実行
     + [x] `test:unit` : karmaの実行
-    + [x] `test:e2e` : End to End Test(option `gulp test --case=e2e`)
+    + [x] `test:e2e` : End to End Test
     + [ ] `test:accept` : 受け入れ(シナリオ)テスト
     + [ ] `test:api` : apiに対するテスト
  + **REPORT**
@@ -61,8 +61,10 @@ jspm dl-loader --traceur
 
 ### Roadmap
 
+ + [ ] Firefox OS アプリ対応
  + [ ] altJS対応
  + [ ] cssプリプロセッサ系(sass/less)
+ + [ ] Cordova対応
  + [ ] [covorage report optimization](https://github.com/Workiva/karma-jspm/issues/22)
 
 
@@ -78,6 +80,7 @@ jspm dl-loader --traceur
  + gulp
    + [Gulp Delete files and folders](https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md)
  + ES6
+   + [SublimeText ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax)
    + [6to5 Features](https://6to5.org/docs/learn-es6/)
    + [traceur Features](https://github.com/google/traceur-compiler/wiki/LanguageFeatures)
 

@@ -1,3 +1,7 @@
-import {bootstrap} from './bootstrap'
+// import {bootstrap} from './bootstrap'
+import Bootstrap from './bootstrap'
 
-bootstrap()
+var bs = new Bootstrap();
+
+bs.start();
+bs.useEnhancedObjectLiterals();

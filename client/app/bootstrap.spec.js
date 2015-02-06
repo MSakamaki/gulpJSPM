@@ -1,6 +1,6 @@
 'use strict';
 
-import {bootstrap} from './bootstrap'
+import Bootstrap from './bootstrap'
 
 describe('bootstrap.js test', () => {
 
@@ -9,6 +9,7 @@ describe('bootstrap.js test', () => {
   });
 
   it('test tow...', () => {
+    let bootstrap = new Bootstrap();
     expect(bootstrap).to.be.ok;
   });
 });
