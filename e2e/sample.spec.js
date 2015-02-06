@@ -1,4 +1,4 @@
-describe('protractor sample', function() {
+describe('protractor sample',() => {
 
   it('reading.fxos homepage', function() {
     browser.get('http://reading.fxos.org');

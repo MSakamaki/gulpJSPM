@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var argv = require("yargs").argv;
 
 require('gulp-load-plugins')();
+require('require-dir')('./gulp');
 require('require-dir')('./gulp/tasks');
 
 // DEVELOPMENT TASKS

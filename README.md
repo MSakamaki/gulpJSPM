@@ -59,10 +59,11 @@ jspm dl-loader --traceur
      + [ ] `--ci=true` CI環境用の処理を行う
 
 
-### その他
+### Roadmap
 
  + [ ] altJS対応
  + [ ] cssプリプロセッサ系(sass/less)
+ + [ ] [covorage report optimization](https://github.com/Workiva/karma-jspm/issues/22)
 
 
 ## 参考資料
