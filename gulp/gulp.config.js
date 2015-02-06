@@ -12,6 +12,12 @@ module.exports = {
     e2e:{
       tmp: './.tmp/e2e',
       src: './e2e/**/*.js'
+    },
+    app:{
+      src: './client/app/**/*!(spec).js',
+    },
+    doc:{
+      src: './doc'
     }
   }
 };

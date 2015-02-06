@@ -1,8 +1,15 @@
 var gulp = require('gulp');
 var del = require('del');
+var config = require('../gulp.config');
 
 gulp.task('clean:e2e', function (cb) {
   del([
-    '.tmp/e2e/*'
+    config.test.e2e.tmp
+  ], cb);
+});
+
+gulp.task('clean:doc', function (cb) {
+  del([
+    config.test.doc.src
   ], cb);
 });

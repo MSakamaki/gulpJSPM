@@ -38,6 +38,9 @@ jspm dl-loader --traceur
  + **Develop**
     + [x] `serve` : サーバ起動
     + [x] `default` : `gulp serve`のalias
+ + **DOCUMENT** [yuidoc](http://yui.github.io/yuidoc/)
+    + [x] `doc` : ドキュメントを作成＆表示(ライブリロード作成)
+    + [x] `doc:gen` : ドキュメントを作成
  + **TEST**
     + [x] `test` : 全テストの実行
     + [x] `test:unit` : karmaの実行
