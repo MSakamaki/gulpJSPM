@@ -1,3 +1,4 @@
+/*jslint node: true */
 'use strict';
 
 var startSimulator = require('node-firefox-start-simulator');
@@ -18,7 +19,7 @@ gulp.task('fxos:v22',function(){
            setTimeout(function(){
             client.getWebapps(function(err, webapps) {
               webapps.listRunningApps(function(err, apps) {
-                console.log('Running apps:', apps);
+                //console.log('Running apps:', apps);
                 //client.disconnect();
                 //process.kill(simulator.pid);
               });

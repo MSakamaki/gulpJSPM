@@ -1,53 +1,7 @@
 'use strict';
 
-var gulp = require('gulp');
-var argv = require("yargs").argv;
-var jshint = require('gulp-jshint');
+var path = require('path');
+global.appRoot = path.resolve(__dirname);
 
 require('gulp-load-plugins')();
-require('require-dir')('./gulp');
-require('require-dir')('./gulp/tasks');
-require('require-dir')('./gulp/tasks/fxos');
-
-// DEVELOPMENT TASKS
-//========= init task ==========g
-
-gulp.task('lint', function() {
-  return gulp.src([
-    'client/app/**/*.js',
-    'e2e/**/*.js'
-    ])
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
-
-
-//================================================
-var gulp = require('gulp');
-var karma = require('karma').server;
-
-// Tests
-// --case= : e2e  : e2e  test
-//           unit : unit test
-//           else : unit and e2e test
-gulp.task('test', function(done) {
-  if (argv.case === 'e2e'){
-    gulp.run('test:e2e',done);
-  }else if(argv.case === 'unit'){
-    gulp.run('test:unit',done);
-  }else{
-    gulp.run('test:unit',done);
-    gulp.run('test:e2e',done);
-  }
-});
-
-gulp.task('test:unit', function(done) {
-  karma.start({
-    configFile: __dirname + '/karma.conf.js'
-  }, done);
-});
-
-//================================================
-
-// Default
-gulp.task('default', ['serve']);
+require('require-dir')('./gulp/tasks',{recurse:true});

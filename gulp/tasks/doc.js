@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp');
 var yuidoc = require('gulp-yuidoc');
 var config = require('../gulp.config');
@@ -11,3 +14,4 @@ gulp.task('doc:gen', ['clean:doc'], function(){
 gulp.task('doc:open', ['browser-sync:doc'],function(){});
 
 gulp.task('doc', ['doc:gen', 'doc:open']);
+gulp.task('doc:test', ['doc', 'browser-sync:exit']);

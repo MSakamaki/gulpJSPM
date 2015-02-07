@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp');
 var del = require('del');
 var config = require('../gulp.config');

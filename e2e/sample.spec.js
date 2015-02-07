@@ -12,7 +12,7 @@ describe('protractor sample',()=> {
     browser.wait(()=>{
       return addBtnEl.isPresent();
     }, 10000, 'about add cart').then(()=>{
-      expect(addBtnEl.getText()).toEqual('Get Server Meesage');
+      expect(addBtnEl.getText()).toEqual('Push!!');
     });
   });
 
@@ -22,14 +22,14 @@ describe('protractor sample',()=> {
     var serverMsg = element(by.css('.js-message'));
     browser.wait(()=>{
       return addBtnEl.isPresent();
-    }, 10000, 'about add cart').then(()=>{
+    }, 10000, 'about ').then(()=>{
       return addBtnEl.click();
     }).then(()=>{
       return browser.wait(()=>{
         return serverMsg.isPresent();
       }, 10000, 'no search message');
     }).then(()=>{
-      expect(serverMsg.getText()).toEqual('hello express server');
+      expect(serverMsg.getText()).toEqual('Get To : hello express server');
     });
   });
 

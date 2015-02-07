@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp');
 var gprot = require("gulp-protractor");
 var protractor = gprot.protractor;
@@ -8,7 +11,7 @@ var webdriver_update = gprot.webdriver_update;
 gulp.task('webdriver_update', webdriver_update);
 gulp.task('webdriver_standalone', webdriver_standalone);
 
-gulp.task('test:e2e', [
+gulp.task('protractor', [
   'lint',
   'webdriver_update',
   'browser-sync:test',
@@ -19,7 +22,7 @@ gulp.task('test:e2e', [
   gulp.src(['./.tmp/e2e/**/*.spec.js']).pipe(protractor({
     configFile: './protractor/protractor.conf.js',
   })).on('error', function(e) {
-    console.log(e)
+    process.stdout.write(e + '\n');
     gulp.run('browser-sync:exit');
   }).on('end', function(){
     gulp.run('browser-sync:exit');

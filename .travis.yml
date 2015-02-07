@@ -11,4 +11,6 @@ before_script:
   - gulp test
   - jspm dl-loader --6to5
   - gulp test
+  - gulp doc:test
+  - gulp serve:test
 
