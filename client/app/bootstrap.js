@@ -1,4 +1,7 @@
-/* jshint exnext: true, expr: true */
+/* jshint exnext: true, expr: true, */
+/* jshint -W100 */
+/* jshint -E001 */
+
 import './bootstrap.css!';
 
 import $          from 'jquery';
