@@ -18,6 +18,10 @@ gulp.task('browser-sync', function() {
         baseDir: ['./client']
       },
       port: 9000,
+      ui: {
+        port: 3000,
+        weinre: {port: 3050 }
+      },
       // firefox, google chrome, 
       browser: ['google chrome'],
       tunnel: false
@@ -32,6 +36,10 @@ gulp.task('browser-sync:test', function() {
         baseDir: ['./client']
       },
       port: 9000,
+      ui: {
+        port: 3000,
+        weinre: {port: 3050 }
+      }
     });
 });
 
@@ -43,11 +51,10 @@ gulp.task('browser-sync:doc', function() {
         baseDir: ['./doc']
       },
       port: 9002,
+      ui: {
+        port: 3002,
+        weinre: {port: 3052 }
+      }
     });
   gulp.watch(config.app.js, ['doc:gen']);
-});
-
-
-gulp.task('browser-sync:exit', function() {
-  browserSync.exit();
 });

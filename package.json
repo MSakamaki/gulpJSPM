@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.0.0-rc4",
+    "chalk": "^0.5.1",
     "fxos-findapp": "^0.3.0",
     "gulp": "^3.8.10",
     "gulp-6to5": "^3.0.0",
@@ -25,8 +26,10 @@
     "gulp-protractor": "0.0.12",
     "gulp-traceur": "^0.16.0",
     "gulp-yuidoc": "^0.1.2",
+    "istanbul": "^0.3.5",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "git://github.com/douglasduteil/karma-coverage#next",
     "karma-firefox-launcher": "^0.1.4",
     "karma-jspm": "^1.1.4",
     "karma-mocha": "^0.1.10",

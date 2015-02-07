@@ -11,7 +11,11 @@ gulp.task('doc:gen', ['clean:doc'], function(){
     .pipe(gulp.dest(config.test.doc.src));
 });
 
-gulp.task('doc:open', ['browser-sync:doc'],function(){});
+gulp.task('doc:open', ['browser-sync:doc']);
 
 gulp.task('doc', ['doc:gen', 'doc:open']);
-gulp.task('doc:test', ['doc', 'browser-sync:exit']);
+
+gulp.task('doc:test', ['doc'],function(){
+  process.exit();
+});
+

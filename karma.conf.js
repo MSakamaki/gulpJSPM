@@ -20,16 +20,16 @@ module.exports = function(config) {
 
     jspm: {
       //useBundles: true,
-      config: "./client/config.js",
-      packages: "./client/jspm_packages/",
+      config: 'client/config.js',
+      packages: 'client/jspm_packages/',
       loadFiles: [
-          './client/app/**/*.spec.js'
+          'client/app/**/*.spec.js'
         ],
       serveFiles: [
-          './client/app/**/!(*spec|*mock).js',
-          './client/**/*.png',
-          './client/**/*.ico',
-          './client/**/*.css',
+          'client/app/**/!(*spec|*mock).js',
+          'client/**/*.png',
+          'client/**/*.ico',
+          'client/**/*.css',
         ]
     },
 
@@ -64,7 +64,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_DEBUG,
+    logLevel: config.LOG_INFO,
 
 
     // enable / disable watching file and executing tests whenever any file changes

@@ -9,7 +9,6 @@ gulp.task('serve', [
   'express'
 ]);
 
-gulp.task('serve:test', [
-  'serve',
-  'browser-sync:exit'
-]);
+gulp.task('serve:test', ['serve'],function(){
+  process.exit();
+});

@@ -3,11 +3,11 @@
 
 var gulp = require('gulp');
 
-// Test の命名再定義
-gulp.task('test', function(done) {
-    gulp.run('test:unit',done);
-    gulp.run('test:e2e',done);
-});
-
+// Test のalias
 gulp.task('test:unit',['karma']);
 gulp.task('test:e2e',['protractor']);
+
+gulp.task('test',[
+  'test:unit',
+  'test:e2e'
+]);

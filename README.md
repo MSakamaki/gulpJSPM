@@ -35,9 +35,17 @@ jspm dl-loader --traceur
 
 ### gulp tasks
 
+##### use command
+
+```sh
+gulp help
+```
+ + 説明は`gulp/taskDescription.json`に書く
+
+### Roadmap
+
  + **Develop**
     + [x] `serve` : サーバ起動
-    + [x] `default` : `gulp serve`のalias
  + **DOCUMENT** [yuidoc](http://yui.github.io/yuidoc/)
     + [x] `doc` : ドキュメントを作成＆表示(ライブリロード作成)
     + [x] `doc:gen` : ドキュメントを作成
@@ -45,11 +53,10 @@ jspm dl-loader --traceur
     + [x] `test` : 全テストの実行
     + [x] `test:unit` : karmaの実行
     + [x] `test:e2e` : End to End Test
-    + [ ] `test:accept` : 受け入れ(シナリオ)テスト
     + [ ] `test:api` : apiに対するテスト
  + **REPORT**
+    + [ ] `report` : レポートを見る
     + [ ] `report:make` : レポート生成
-    + [ ] `report:view` : レポートを見る
     + [ ] `report:ci` : XMLレポートを生成
  + **BUILD**
     + [ ] `build` : ビルド
@@ -58,12 +65,6 @@ jspm dl-loader --traceur
      + [ ] `--env=unit` 単体テスト用の設定ファイルを使う
      + [ ] `--env=it` 結合テスト用の設定ファイルを使う
      + [ ] `--env=releace` リリース用の設定ファイルを使う
-   + [ ] `ci` デフォルトfalse、レポート等のアウトプットがCI連携用の処理になる
-     + [ ] `--ci=true` CI環境用の処理を行う
-
-
-### Roadmap
-
  + [ ] Firefox OS アプリ対応
  + [ ] altJS対応
  + [ ] cssプリプロセッサ系(sass/less)
@@ -89,6 +90,9 @@ jspm dl-loader --traceur
  + firefox os
    + [node firefox os](http://nicola.github.io/node-fxos/)
    + [node firefox client](https://github.com/harthur/firefox-client)
+
+ + covorage
+   + [isparta](https://github.com/douglasduteil/isparta)
 
 ```sh
 # nodeのes6対応調べるコマンド
