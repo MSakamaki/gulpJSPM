@@ -1,6 +1,4 @@
-/* jshint exnext: true, expr: true, */
-/* jshint -W100 */
-/* jshint -E001 */
+/* jshint exnext: true, -W100, -E001 */
 
 import './bootstrap.css!';
 
