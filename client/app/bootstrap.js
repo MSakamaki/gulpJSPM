@@ -1,7 +1,7 @@
+/* jshint exnext: true, expr: true */
 import './bootstrap.css!';
 
 import $          from 'jquery';
-// TODO:モジュール管理を外部に・・・
 import imgEs6     from '../images/es6.png!image';
 import imgFavicon from '../favicon.ico!image';
 
