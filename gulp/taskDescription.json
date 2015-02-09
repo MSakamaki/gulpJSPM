@@ -43,6 +43,7 @@
     "webdriver_standalone" : "webdriver-standaloneの実行",
     "webdriver_update" : "webdriverのアップデート",
     "browser-sync:report":"browser-sync(レポート表示用)を起動します",
-    "report":"レポートを作成し、出力します"
+    "report":"レポートを作成し、出力します",
+    "report:ci":"codeclimate連携レポート出力コマンド"
   }
 }
