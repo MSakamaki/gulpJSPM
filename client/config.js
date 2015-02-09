@@ -1,10 +1,10 @@
 System.config({
+  "transpiler": "6to5",
   "paths": {
     "*": "*.js",
     "gulpjspm/*": "lib/*.js",
-    "github:*": "jspm_packages/github/*.js"
-  },
-  "transpiler": "6to5"
+    "github:*": "https://github.jspm.io/*.js"
+  }
 });
 
 System.config({
