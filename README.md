@@ -45,32 +45,33 @@ gulp help
 ### Roadmap
 
  + **Develop**
-    + [x] `serve` : サーバ起動
+    + [x] ライブリロード開発
  + **DOCUMENT** [yuidoc](http://yui.github.io/yuidoc/)
-    + [x] `doc` : ドキュメントを作成＆表示(ライブリロード作成)
-    + [x] `doc:gen` : ドキュメントを作成
+    + [x] ドキュメントを作成＆表示(ライブリロード作成)
+    + [x] ドキュメントを作成
  + **TEST**
-    + [x] `test` : 全テストの実行
-    + [x] `test:unit` : karmaの実行
-    + [x] `test:e2e` : End to End Test
-    + [ ] `test:api` : apiに対するテスト
+    + [x] karmaの実行
+    + [x] End to End Test
+    + [ ] apiに対するテスト
  + **REPORT**
-    + [ ] `report` : レポートを見る
-    + [ ] `report:make` : レポート生成
-    + [ ] `report:ci` : XMLレポートを生成
+    + [x] covorage
+      + [ ] [jspm covorage][covorage report optimization](https://github.com/Workiva/karma-jspm/issues/22)
+      + [x] [isparta es6(6to5) covorage](https://github.com/douglasduteil/isparta)
+    + [ ] software metrix(plato)
+      + [ ] [plato](https://github.com/es-analysis/plato/issues/127)
  + **BUILD**
-    + [ ] `build` : ビルド
+    + [ ] build task
+    + [ ] altJS対応
+    + [ ] cssプリプロセッサ系(sass/less)
+    + [ ] minify
  + **OPTION**
-   + `env`デフォルトunit
+   + [ ] 環境別動作
      + [ ] `--env=unit` 単体テスト用の設定ファイルを使う
      + [ ] `--env=it` 結合テスト用の設定ファイルを使う
      + [ ] `--env=releace` リリース用の設定ファイルを使う
- + [ ] Firefox OS アプリ対応
- + [ ] altJS対応
- + [ ] cssプリプロセッサ系(sass/less)
- + [ ] Cordova対応
- + [ ] [covorage report optimization](https://github.com/Workiva/karma-jspm/issues/22)
-
+ + cross platform
+   + [ ] Firefox OS アプリ対応
+   + [ ] Cordova対応
 
 ## 参考資料
 
@@ -83,6 +84,7 @@ gulp help
  + [Aurelia Skeleton](https://github.com/aurelia/skeleton-navigation)
  + gulp
    + [Gulp Delete files and folders](https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md)
+   + [help](https://www.npmjs.com/package/gulp-help)
  + ES6
    + [SublimeText ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax)
    + [6to5 Features](https://6to5.org/docs/learn-es6/)
@@ -90,9 +92,10 @@ gulp help
  + firefox os
    + [node firefox os](http://nicola.github.io/node-fxos/)
    + [node firefox client](https://github.com/harthur/firefox-client)
-
  + covorage
-   + [isparta](https://github.com/douglasduteil/isparta)
+   + [isparta(es6 covorage tool)](https://github.com/douglasduteil/isparta)
+   + [istanbul](https://github.com/gotwarlost/istanbul)
+   + [ismailia(old es6 covorage tool)](https://github.com/Spote/ismailia)
 
 ```sh
 # nodeのes6対応調べるコマンド

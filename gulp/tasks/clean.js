@@ -24,3 +24,9 @@ gulp.task('clean:fxos', function (cb) {
     config.fxos.tmp
   ], cb);
 });
+
+gulp.task('clean:covorage', function (cb) {
+  del([
+    config.report.covorage
+  ], cb);
+});

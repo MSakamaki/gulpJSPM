@@ -43,6 +43,21 @@ gulp.task('browser-sync:test', function() {
     });
 });
 
+gulp.task('browser-sync:report', function() {
+  browserSync.init(['./report/**/*'],{
+      notify: false,
+      open: true,
+      server: {
+        baseDir: ['./report/coverage/firefox']
+      },
+      port: 9001,
+      ui: {
+        port: 3001,
+        weinre: {port: 3051 }
+      }
+    });
+});
+
 gulp.task('browser-sync:doc', function() {
   browserSync.init(['./doc/**/*'],{
       notify: false,

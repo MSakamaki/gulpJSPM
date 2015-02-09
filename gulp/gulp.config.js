@@ -16,6 +16,9 @@ module.exports = {
     src: 'client/**/*',
     js : './client/app/**/*!(spec).js'
   },
+  report:{
+    covorage: './report/coverage/**/*'
+  },
   test:{
     e2e:{
       tmp: './.tmp/e2e',

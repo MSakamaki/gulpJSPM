@@ -10,8 +10,8 @@ gulp.task('karma', function(done) {
   }, done);
 });
 
-gulp.task('karma:cov', function(done) {
+gulp.task('karma:cov',['clean:covorage'], function(done) {
   karma.start({
-    configFile: global.appRoot + '/karma/karma.coverage.conf.js'
+    configFile: global.appRoot + '/karma.covorage.conf.js'
   }, done);
 });

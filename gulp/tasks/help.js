@@ -64,6 +64,7 @@ gulp.task('h:list', function(){
   });
 });
 
+// 依存関係を表示する、ツリー表示したい
 gulp.task('h:dep', function(){
   var padnum=taskGetter.maxTaxkNameLength();
   console.log(colors.blue.bold(' === ependently Task === '));

@@ -8,7 +8,8 @@
     "serve",
     "test",
     "test:e2e",
-    "test:unit"
+    "test:unit",
+    "report"
   ],
   "description":{
     "browser-sync" : "browser-sync(クライアント開発用)を起動します",
@@ -18,6 +19,7 @@
     "clean" : "すべての消去作業を実行",
     "clean:doc" : "ドキュメントの中身を消去します",
     "clean:e2e" : "e2eテストで使用した一時ファイルを消去します",
+    "clean:covorage":"カバレッジディレクトリを削除します",
     "clean:fxos" : "pending...",
     "default" : "ライブリロード開発を開始します",
     "doc" : "ドキュメント作成＆編集を行います",
@@ -39,6 +41,8 @@
     "test:e2e" : "  e2eテストを実行します",
     "test:unit" : "  単体テストを実行します",
     "webdriver_standalone" : "webdriver-standaloneの実行",
-    "webdriver_update" : "webdriverのアップデート"
+    "webdriver_update" : "webdriverのアップデート",
+    "browser-sync:report":"browser-sync(レポート表示用)を起動します",
+    "report":"レポートを作成し、出力します"
   }
 }
