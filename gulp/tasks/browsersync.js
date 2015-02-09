@@ -48,7 +48,7 @@ gulp.task('browser-sync:report', function() {
       notify: false,
       open: true,
       server: {
-        baseDir: ['./report/coverage/firefox']
+        baseDir: [config.report.covorage_view]
       },
       port: 9001,
       ui: {

@@ -17,7 +17,10 @@ module.exports = {
     js : './client/app/**/*!(spec).js'
   },
   report:{
-    covorage: './report/coverage/**/*'
+    covorage:      './report/coverage',
+    lcov:          './report/lcov',
+    covorage_view: './report/coverage/firefox',
+    lcov_report:   './report/lcov/firefox'
   },
   test:{
     e2e:{

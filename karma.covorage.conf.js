@@ -52,6 +52,11 @@ module.exports = function(config) {
           subdir: normalizationBrowserName
         },
         {
+          type: 'lcov',
+          dir: 'report/lcov/',
+          subdir: normalizationBrowserName
+        },
+        {
           type: 'html',
           dir: 'report/coverage/',
           subdir: normalizationBrowserName

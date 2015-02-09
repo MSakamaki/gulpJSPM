@@ -8,7 +8,7 @@ JSフレームワーク非依存のプロジェクトテンプレート
 | Build Status | [![Build Status](https://travis-ci.org/MSakamaki/gulpJSPM.svg?branch=master)](https://travis-ci.org/MSakamaki/gulpJSPM) |
 | Code Climate | [![Code Climate](https://codeclimate.com/github/MSakamaki/gulpJSPM/badges/gpa.svg)](https://codeclimate.com/github/MSakamaki/gulpJSPM) |
 | Dependency Status | [![Dependency Status](https://gemnasium.com/MSakamaki/gulpJSPM.svg)](https://gemnasium.com/MSakamaki/gulpJSPM) |
-| Coverage | [![Coverage Status](https://coveralls.io/repos/MSakamaki/gulpJSPM/badge.svg)](https://coveralls.io/r/MSakamaki/gulpJSPM) |
+| Application Covoiturage | [![Code Climate](https://codeclimate.com/github/MSakamaki/gulpJSPM/badges/gpa.svg)](https://codeclimate.com/github/MSakamaki/gulpJSPM) |
 
 ### Get Started
 

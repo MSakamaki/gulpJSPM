@@ -27,6 +27,7 @@ gulp.task('clean:fxos', function (cb) {
 
 gulp.task('clean:covorage', function (cb) {
   del([
-    config.report.covorage
+    config.report.covorage,
+    config.report.lcov
   ], cb);
 });
