@@ -33,6 +33,15 @@ jspm dl-loader --6to5
 jspm dl-loader --traceur
 ```
 
+### using js libs CDN Settings
+
+```sh
+# use CDN
+jspm setmode remote
+# use local javascript file
+jspm setmode local
+```
+
 ### gulp tasks
 
 ##### use command
@@ -71,7 +80,11 @@ gulp help
      + [ ] `--env=releace` リリース用の設定ファイルを使う
  + cross platform
    + [ ] Firefox OS アプリ対応
+     + [x] Firefox OSエミュレータ起動
+     + [ ] ライブリロード開発
+     + [ ] デプロイ
    + [ ] Cordova対応
+   + [ ] appnium
 
 ## 参考資料
 

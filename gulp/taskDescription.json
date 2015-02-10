@@ -6,7 +6,6 @@
     "h:list",
     "help",
     "serve",
-    "test",
     "test:e2e",
     "test:unit",
     "report"
@@ -37,7 +36,6 @@
     "protractor" : "e2e以下のフォルダにあるテストコードで、protractorを実行します",
     "serve" : "ライブリロード開発を開始します",
     "serve:test" : "ライブリロード開発のコマンドのをテスト後、gulpを強制終了させます(watchしない)",
-    "test" : "すべてのテストを実行します",
     "test:e2e" : "  e2eテストを実行します",
     "test:unit" : "  単体テストを実行します",
     "webdriver_standalone" : "webdriver-standaloneの実行",

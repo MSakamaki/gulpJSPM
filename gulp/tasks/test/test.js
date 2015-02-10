@@ -7,7 +7,3 @@ var gulp = require('gulp');
 gulp.task('test:unit',['karma']);
 gulp.task('test:e2e',['protractor']);
 
-gulp.task('test',[
-  'test:unit',
-  'test:e2e'
-]);
