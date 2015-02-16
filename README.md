@@ -99,8 +99,9 @@ gulp help
    + [Gulp Delete files and folders](https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md)
    + [help](https://www.npmjs.com/package/gulp-help)
  + ES6
+   + [ES6 features](https://github.com/lukehoban/es6features)
    + [SublimeText ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax)
-   + [6to5 Features](https://6to5.org/docs/learn-es6/)
+   + [babeljs--6to5-- Features](https://babeljs.io/docs/learn-es6/)
    + [traceur Features](https://github.com/google/traceur-compiler/wiki/LanguageFeatures)
  + firefox os
    + [node firefox os](http://nicola.github.io/node-fxos/)
